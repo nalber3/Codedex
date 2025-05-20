@@ -56,7 +56,7 @@ elif character == 3:
 print(profile)
 
 #some brief lore
-print("Now defeat enough enemies to gain 20 xp in order to beat the game!\n"
+print("Now defeat enough enemies to gain 50 xp in order to beat the game!\n"
       "Snakes are easier to fight and give small rewards,\n"
       "demons are the toughest, but their loot is big,\n"
       "orcs offer a moderated challange and decent outcomes\n"
@@ -184,6 +184,7 @@ while profile["experience"] < 50 and profile["hp"] > 0:
                     elif orcloot == 3:
                         print(f"You killed the orc and lost {orcattack} hp!\n"
                                "10 xp gained!")
+                        profile["experience"] += 10
                         print(profile)
                     
         if battle == 2:
